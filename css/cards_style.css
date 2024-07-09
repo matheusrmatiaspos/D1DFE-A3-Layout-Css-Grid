@@ -1,0 +1,50 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+
+.container{
+    width: 800px;
+    display: grid;
+    grid-template-columns: repeat(3,220px);
+    grid-template-rows: repeat(3, auto);
+    gap: 32px;
+}
+
+.box{
+    gap: 32px 32px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: center;
+    box-shadow: 1px 1px 4px 1px black;
+    height: 520px;
+    max-width: 220px;
+}
+
+.card img{
+    height: 180px;
+}
+
+.card *{
+    margin: 0px 12px;
+}
+
+.card button{
+    height: 32px;
+    background-color: lightgray;
+    border: none;
+    padding: 8px;
+}
+
+.card button:hover{
+    cursor: pointer;
+    transform: scale(110%);
+}
